@@ -21,7 +21,7 @@ pip install manimlib
 ## First Project
 `scene.py` Shapes class:
 ```python
-from manimlib.imports import *
+from manim import *
 
 class Shapes(Scene):
     def construct(self):
@@ -57,17 +57,17 @@ manim scene.py -s
 ```python
 class Txt(Scene):
     def construct(self):
-        text1 = TextMobject("Dirac's Equation", color=BLUE)
+        text1 = Text("Dirac's Equation", color=BLUE)
         text1.scale(1.5).to_edge(UP)
 
-        eqn = TexMobject(r"(i \partial - m)\psi = 0")
+        eqn = Tex(r'(i$\partial$ - m)$\psi$ = 0')
 
-        where = TextMobject("Where, ").scale(0.75)
+        where = Text('Where, ').scale(0.75)
 
-        i_num = TexMobject(r"i = \text{imaginary number}").scale(0.75)
-        p_d = TexMobject(r"\partial = \text{differential in 4-Dimension}").scale(0.75)
-        m = TexMobject(r"m = \text{fermion mass}").scale(0.75)
-        psi = TexMobject(r"\psi = \text{fermion wave function}").scale(0.75)
+        i_num = Tex(r'i = \text{imaginary number}').scale(0.75)
+        p_d = Tex(r'$\partial$ = \text{differential in 4-Dimension}').scale(0.75)
+        m = Tex(r'm = \text{fermion mass}').scale(0.75)
+        psi = Tex(r'$\psi$ = \text{fermion wave function}').scale(0.75)
 
         self.play(Write(text1))
 
