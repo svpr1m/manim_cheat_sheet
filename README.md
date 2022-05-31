@@ -80,3 +80,8 @@ class Txt(Scene):
         self.play(Write(m.shift(2.5*LEFT + 1*DOWN)))
         self.play(Write(psi.shift(1.7*LEFT + 1.5*DOWN)))
 ```
+
+Txt:
+https://user-images.githubusercontent.com/97038073/171106601-75d9c13e-7792-4ca1-a9a2-9b14dd9fdca0.mp4
+
+
