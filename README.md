@@ -80,6 +80,7 @@ class Txt(Scene):
         self.play(Write(m.shift(2.5*LEFT + 1*DOWN)))
         self.play(Write(psi.shift(1.7*LEFT + 1.5*DOWN)))
 ```
+<<<<<<< HEAD
 
 ## Working with 3D
  `ScalarField` class:
@@ -116,3 +117,5 @@ class ScalarField(ThreeDScene):
             np.sin(5*u)*(np.cos(5*v))/5
         ])
 ```
+=======
+>>>>>>> cb2809c9adac2e54f7e2e9bb6d218a9af2a1298c
