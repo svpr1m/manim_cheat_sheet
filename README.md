@@ -28,7 +28,7 @@ class Shapes(Scene):
         circle = Circle()
         square = Square()
 
-        self.play(ShowCreation(circle))
+        self.play(Create(circle))
         self.play(Transform(circle, square))
         self.play(FadeOut(circle))
         self.wait(1)
